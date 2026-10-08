@@ -1,5 +1,7 @@
 # Lesson 3 — Functions and a bug that does not need a crash
 
+Syllabus Unit 4. Previous: [Lesson 2 — collections and decisions](02-collections-and-decisions.md). Ask a tutor for one hint at a time; make the repair yourself.
+
 ## Aim
 
 Turn a repeated operation into a function and understand early return.
@@ -46,3 +48,5 @@ Explain why one passing example is insufficient. Distinguish an incorrect result
 Reference: [Python functions and control flow](https://docs.python.org/3/tutorial/controlflow.html).
 
 After an independent attempt, compare with [the solution](../solutions/03_count_status.py).
+
+Next: [Unit 5 in the syllabus](../SYLLABUS.md#unit-5--files-the-shell-git-and-github). Record the repair, your explanation, and any hints in [PROGRESS.md](../PROGRESS.md) before advancing.

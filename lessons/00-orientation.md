@@ -1,4 +1,6 @@
-# Lesson 0 — Where code lives
+# Unit 1 — Where code lives (original Lesson 0)
+
+First: [Unit 0 — foundations before Python](00-foundations.md). This orientation now applies that map to a small Python example. There is no installation prerequisite.
 
 ## The question
 
@@ -30,3 +32,5 @@ Do not install a new application merely to finish this task. Do not paste privat
 In your own words, distinguish an instruction from its result. Then explain why editing a file and running it are separate actions.
 
 Next: [Lesson 1](01-follow-a-program.md).
+
+Unit 0 introduced the roles; you are now identifying them in an actual learning environment. Add your own explanation to [PROGRESS.md](../PROGRESS.md), rather than marking the skill independent just because the example ran.

@@ -1,5 +1,7 @@
 # Lesson 1 — Follow the state of a small program
 
+Syllabus Unit 2. Previous: [Unit 1 — browser orientation](00-orientation.md). If saving, running, and output still blur together, revisit [Unit 0](00-foundations.md).
+
 ## Aim
 
 Understand assignment and execution order before trying to write a large program.

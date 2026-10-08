@@ -2,6 +2,18 @@
 
 Reviewed 7 October 2026. This is a selected curriculum, not an exhaustive repository survey. Course pages and selected repository READMEs were inspected; full deployments and every exercise were not audited. Prices, interfaces, and account entitlements can change.
 
+Update, 8 October 2026: rechecked the Futurecoder, CS50P, Software Carpentry shell/Git, and Python tutorial landing pages; added the foundation references below. The later resource notes retain their original review date. Product access notes are dated observations, not prerequisites or guarantees of current access.
+
+## S0 — Unit 0 foundations
+
+[Code.org educational videos](https://code.org/en-US/resources/videos) — choose only “How Computers Work: Hardware and Software” or “CPU, Memory, Input & Output” if you want reinforcement. The original Unit 0 lesson and worksheet are sufficient; these freely accessible videos are optional, not another required course.
+
+[MDN: How the web works](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) — read the opening clients-and-servers explanation for the weather-app example. Defer the detailed networking and web-development steps until Unit 7.
+
+[GitHub: What is GitHub?](https://docs.github.com/en/get-started/start-your-journey/what-is-github) — a reference for the relationship between Git, repositories, and hosting. Git practice belongs in Unit 5.
+
+Use the Python and JSON references below when needed. Our diagrams, comprehension questions, and no-code worksheet are original explanations; external course content is linked rather than copied. No new course, software installation, or cloud account is needed for Unit 0.
+
 ## The learning core
 
 ### S1 — Futurecoder: initial practice environment

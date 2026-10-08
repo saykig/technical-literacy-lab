@@ -8,7 +8,7 @@ The language sequence is **Python first; SQL after basic data handling; Rust rea
 
 Python and Rust are general-purpose programming languages. R is a programming language and environment oriented toward statistical computing. A domain-specific language (DSL) addresses a narrower problem: SQL queries databases, and regular expressions describe text patterns. Mermaid provides notation for diagrams. JSON is a data-interchange format, not another general-purpose programming language. See the language references in [SOURCES.md](SOURCES.md).
 
-No advanced mathematics is needed for Units 1–8 as designed here. Units 9–10 introduce the mathematical ideas needed for basic ML literacy. Mathematical derivations of training algorithms are a separate, later goal.
+Begin with a short, no-code Unit 0. Then keep the original Python-first sequence in Units 1–12. Units 0–4 have starter lessons; Units 5–12 describe later work rather than promising complete lesson files. No advanced mathematics is needed for Units 0–8 as designed here. Units 9–10 introduce the mathematical ideas needed for basic ML literacy. Mathematical derivations of training algorithms are a separate, later goal.
 
 ## How to judge progress
 
@@ -16,13 +16,34 @@ For each unit, distinguish four abilities: recognizing a term, explaining it, us
 
 Use one main resource at a time. Futurecoder is the initial practice environment; selected CS50P material supplies a structured programming sequence. Other resources enter only when their topic is needed. You are not expected to complete several introductory courses in parallel.
 
+## Unit 0 — Foundations before Python
+
+**Aim:** Understand how instructions, tools, files, and computers relate, assuming no computer science background. One 45–60-minute session, or two short sessions; no installation or coding.
+
+**Concepts, in six small groups:**
+
+1. Hardware and software; CPU; operating system; temporary memory (RAM) and persistent storage.
+2. Source code and programming languages; interpreter and compiler; input, output, and errors.
+3. Editor and IDE; terminal, shell, and CLI; files, directories, and paths.
+4. Repository; Git versus GitHub; libraries and dependencies.
+5. Local versus cloud; servers and APIs; frontend and backend.
+6. General-purpose languages, DSLs, markup, and data formats, using Python, SQL, Markdown, and JSON as examples.
+
+**Work:** Read [the foundations lesson](lessons/00-foundations.md), answer its short comprehension questions, and complete [the no-code worksheet](exercises/00_foundations.md). Trace opening and saving a note, distinguish instructions from results, locate a file in a folder tree, and sketch a request to a weather service. Explain the relationships rather than reciting definitions.
+
+**Resource:** The original lesson is sufficient to begin. Optional: selected [Code.org How Computers Work videos](https://code.org/en-US/resources/videos) or MDN's [clients-and-servers explanation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works). See [S0](SOURCES.md#s0--unit-0-foundations) for the limited reading scope.
+
+**Ready to move on:** You can explain how a saved instruction becomes an action, distinguish saving from running, describe the separate roles of an editor and execution tool, and distinguish local files from an online repository. Apply this to one new familiar example without a full answer from a tutor. Any uncertain terms remain questions in [PROGRESS.md](PROGRESS.md); do not delay Python until every definition is memorized.
+
+**Defer:** CPU internals, binary arithmetic, compiler stages, detailed networking, package managers, and deployments. Units 5, 7, and 8 return to these systems as practical tasks make them relevant.
+
 ## Unit 1 — Where code lives and what runs it
 
 **Concepts:** source code, file, folder, path, editor, interpreter, terminal, shell, browser, local and remote execution.
 
-**Work:** Follow [Lesson 0](lessons/00-orientation.md). Identify the code editor, the Run control, and the output area in a browser environment. Explain which text is an instruction and which is output. Inspect a folder without running anything in it.
+**Work:** After Unit 0, follow [the original orientation lesson](lessons/00-orientation.md). Identify the code editor, the Run control, and the output area in a browser environment. Explain which text is an instruction and which is output. Inspect a folder without running anything in it. This turns Unit 0's map into your first small Python experience.
 
-**Resource:** Futurecoder; Software Carpentry's Unix Shell introduction for the later local setup.
+**Resource:** [Futurecoder](https://futurecoder.io/); Software Carpentry's [Unix Shell introduction](https://swcarpentry.github.io/shell-novice/) for the later local setup.
 
 **Ready to move on:** You can explain why a Python file, a terminal command, and a printed result are different things. You do not need to install anything yet.
 
@@ -32,7 +53,7 @@ Use one main resource at a time. Futurecoder is the initial practice environment
 
 **Work:** Follow [Lesson 1](lessons/01-follow-a-program.md). Predict a 5–10-line program's output, then change a value and predict again. Compare `3`, `"3"`, and `True` without treating them as interchangeable.
 
-**Resource:** Futurecoder; CS50P “Functions, Variables.” Use the official Python tutorial as a reference later, not the first textbook.
+**Resource:** [Futurecoder](https://futurecoder.io/); [CS50P “Functions, Variables”](https://cs50.harvard.edu/python/weeks/0/). Use the official Python tutorial as a reference later, not the first textbook.
 
 **Ready to move on:** You can trace reassignment correctly and explain why a previously computed result does not automatically update when an input variable changes.
 
@@ -42,7 +63,7 @@ Use one main resource at a time. Futurecoder is the initial practice environment
 
 **Work:** Follow [Lesson 2](lessons/02-collections-and-decisions.md). Count records matching a condition. Change the condition. Test a collection with no matches and an empty collection. Introduce a dictionary only after a list makes sense.
 
-**Resource:** Futurecoder; CS50P “Conditionals” and “Loops.”
+**Resource:** [Futurecoder](https://futurecoder.io/); [CS50P “Conditionals”](https://cs50.harvard.edu/python/weeks/1/) and [“Loops”](https://cs50.harvard.edu/python/weeks/2/).
 
 **Ready to move on:** You can say what happens on every loop iteration, distinguish `=` from `==`, and explain why indentation changes behavior.
 
@@ -52,7 +73,7 @@ Use one main resource at a time. Futurecoder is the initial practice environment
 
 **Work:** Follow [Lesson 3](lessons/03-functions-and-bugs.md). Repair a function that returns too early. Write a small check with expected inputs and outputs. Separate a crash from an incorrect result and from a bad assumption.
 
-**Resource:** CS50P “Exceptions,” “Libraries,” and “Unit Tests,” with short tutor explanations connecting the pieces.
+**Resource:** [CS50P](https://cs50.harvard.edu/python/) “Exceptions,” “Libraries,” and “Unit Tests,” with short tutor explanations connecting the pieces.
 
 **Ready to move on:** You can explain the difference between printing and returning; repair one bug without replacing the whole program; test an empty input and an input that could expose the bug.
 
@@ -60,7 +81,7 @@ Use one main resource at a time. Futurecoder is the initial practice environment
 
 **Concepts:** working directory, relative path, command, option, repository, commit, diff, branch, clone, fork, pull request, issue.
 
-**Work:** Save and run one `.py` file locally. Learn how to list files and change directory. Read a diff before accepting it. Turn this folder into a repository when comfortable. Make a small change on a branch and inspect it before merging. First learn the concepts in the browser where possible; terminal Git comes afterward.
+**Work:** Save and run one `.py` file locally. Learn how to list files and change directory. Inspect this existing private GitHub repository, then learn to keep a local copy and read a diff before recording or uploading a change. Learn what a branch is; practice creating one only when you explicitly request it. First learn the concepts in the browser where possible; terminal Git comes afterward.
 
 **Resource:** Software Carpentry “The Unix Shell” episodes 1–3 and “Version Control with Git” episodes 1–7. MIT Missing Semester's overview and Git lecture are optional reinforcement, not additional compulsory courses.
 
@@ -146,4 +167,4 @@ Do not start several languages at once. Do not start with interview puzzles, a f
 
 ## The recurring lesson format
 
-Use this as a flexible 45–60-minute session: recall one previous idea; introduce one concept; trace a small example; predict and run it; modify it; explain the result; try a new problem without assistance. Give each unfamiliar technical term an example and a non-example. Keep a list of unresolved questions, but do not let that list expand the current lesson indefinitely.
+Use this as a flexible 45–60-minute session: recall one previous idea; introduce one concept; trace a small example; predict and run it; modify it; explain the result; try a new problem without assistance. For Unit 0, sketch and explain a familiar action instead of running code. Give each unfamiliar technical term an example and a non-example. Keep a list of unresolved questions, but do not let that list expand the current lesson indefinitely. Ask ChatGPT for one hint at a time; the learner makes exercise edits and demonstrates understanding before progress is recorded.

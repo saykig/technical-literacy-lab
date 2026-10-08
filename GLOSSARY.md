@@ -2,11 +2,63 @@
 
 Consult the relevant section during a lesson. These are short orientation definitions, not exhaustive specifications. Write your own example beside a term once you have used it. References are collected in [SOURCES.md](SOURCES.md).
 
-## First: code and execution
+## Unit 0 — A map of the basics
 
-**Source code:** Instructions written in a programming language. It is not the output produced by running those instructions.
+Use this section alongside [the foundation lesson](lessons/00-foundations.md). Learn the relationships through its examples; consult later sections only when their units need them.
 
-**Program:** Instructions organized to perform a task. A short script is a program; size is not the defining distinction.
+### Computer and execution
+
+**Hardware / software:** Hardware is physical equipment, such as a processor or drive. Software is programs that direct its work. A laptop is hardware; its word processor is software.
+
+**CPU:** Central processing unit: hardware that executes machine instructions. Language tools make human-written code executable; the CPU does not understand ordinary English requests.
+
+**Operating system (OS):** Software managing resources such as memory, files, and devices. macOS, Windows, and Linux let applications use the computer's hardware.
+
+**Memory (RAM) / storage:** RAM is temporary working space for running programs. Storage, such as an SSD or hard drive, keeps saved files when power is off. Changing a working copy is different from saving it.
+
+**Source code / program:** Source code is text written in a programming language. A program organizes instructions to perform a task. Source code can be saved without being executed.
+
+**Interpreter / compiler:** An interpreter executes code; a compiler translates it into another form. Python has an interpreter; Rust normally compiles to a runnable program. Systems can use both translation and execution steps.
+
+**Input / output:** Information supplied to a program and information it produces. Calculator numbers are input; its displayed answer is output, not source code.
+
+**Error / bug:** An error may stop code from being understood or an operation from finishing. A bug causes behavior that differs from what was intended; it can produce wrong output without stopping execution. Later lessons teach how to distinguish these cases.
+
+### Tools and project files
+
+**Editor / IDE:** An editor changes text. An IDE (integrated development environment) combines an editor with other tools, such as running and debugging. A Run control and a text-editing area have different jobs even in one app.
+
+**Terminal / shell / CLI:** A terminal provides a text interface; a shell reads commands and starts programs. A CLI (command-line interface) is a way of using a tool by typing commands. The terminal window is not the Python interpreter.
+
+**File / directory / path:** A file stores information; a directory is a folder organizing files or other directories; a path identifies a location. `lessons/00-foundations.md` locates a file from this repository's root folder.
+
+**Repository / Git / GitHub:** A repository holds project files and recorded history. Git records versions and changes; GitHub hosts repositories online. Git works locally without GitHub. Saving, recording, and uploading are separate actions.
+
+**Library / dependency:** A library provides reusable code. A dependency is a component a project needs; a required library is one example. Python's standard library comes with Python, while other libraries may need installing. The starter exercises need no additional libraries.
+
+### Connected systems
+
+**Local / cloud:** Local means on your own computer; cloud means using other computers over a network. A browser can do local work while also asking remote software for information.
+
+**Server:** Software handling requests, or the computer hosting it. A server can run locally or remotely; the role does not require a special kind of physical machine.
+
+**API:** Application programming interface: agreed ways for software to interact, such as requesting a forecast. An API can be local or network-accessible and need not involve AI.
+
+**Frontend / backend:** The user-facing part of an app and its supporting logic or data handling. A search box belongs to the frontend; finding records may happen in a backend on a server. The exact boundary depends on the app.
+
+### Kinds of technical text
+
+**Programming language:** Rules for expressing computations. Python and Rust serve many purposes; R emphasizes statistical computing. Learn Python first, then compare other languages through their own rules.
+
+**DSL:** Domain-specific language: a language focused on a narrower task. SQL expresses database work. A DSL can perform computations; its scope distinguishes it from a general-purpose language.
+
+**Markup:** Text notation describing document structure, such as Markdown headings or HTML paragraphs. It is useful alongside programming languages without being another general-purpose programming language.
+
+**Data format:** Rules for representing information. JSON holds structured values and CSV holds tabular text data. A program reads these formats; the data alone does not specify the program's behavior or prove its claims.
+
+References: [S0 foundation resources](SOURCES.md#s0--unit-0-foundations), Python documentation, and the language/software references in SOURCES.md. Units 5, 7, and 8 deepen this map when you use the tools.
+
+## Units 1–4: Python code and execution
 
 **Variable:** A name associated with a value or object. In Python, assignment can bind the name to a different object later.
 
@@ -50,31 +102,15 @@ Consult the relevant section during a lesson. These are short orientation defini
 
 Reference: Python's tutorial and control-flow documentation, CS50P, and Software Carpentry (S2–S3).
 
-## Next: tools and repositories
+## Units 5 and 8: tools and repositories in practice
 
-**Editor:** A tool for writing and changing text or code. It does not necessarily execute the code by itself.
-
-**IDE:** An integrated development environment combining an editor with tools such as running, debugging, and code navigation.
-
-**Terminal / shell:** The terminal is the interface displaying text input and output; the shell is a program that interprets commands. They are related, not identical.
-
-**CLI:** Command-line interface: interaction by typed commands and arguments rather than buttons and menus.
-
-**Path / working directory:** A path identifies a file or folder. A relative path is interpreted from a starting location, often the process's current working directory.
-
-**Interpreter / compiler:** An interpreter executes a representation of code; a compiler translates code into another representation. Real systems can use both, so “interpreted” versus “compiled” is not an absolute division.
+**Working directory / relative path:** The working directory is the folder a running program uses as its current location. A relative path is interpreted from a starting location, often that directory. For example, `exercises/check_03.py` finds the checker when the working directory is the repository root.
 
 **Process:** A running instance of a program, with its own execution state and resources.
-
-**RAM / disk:** RAM holds data used during execution; disk or other persistent storage keeps files. Saving a file and assigning a variable are different operations.
-
-**Dependency:** Another component a project relies on. Its version can affect the project's behavior.
 
 **Package / package manager:** A distributable unit of software, and a tool for installing or managing such units. The precise meaning of “package” varies by ecosystem.
 
 **Environment:** The software and settings available when a program runs: interpreter, packages, operating-system details, and configuration.
-
-**Repository / Git / GitHub:** A repository organizes project files and history. Git is a version-control system. GitHub is a hosting and collaboration service built around repositories.
 
 **Commit / diff / branch:** A commit records a version in history; a diff shows changes; a branch names a line of development.
 
@@ -88,7 +124,7 @@ Reference: Python's tutorial and control-flow documentation, CS50P, and Software
 
 Reference: Software Carpentry and Missing Semester (S3–S4).
 
-## Then: data and connected systems
+## Units 6–7: data and connected systems in practice
 
 **CSV / JSON:** CSV represents tabular text data; JSON represents structured values such as objects and arrays. Neither format establishes that its contents are accurate.
 
@@ -98,11 +134,7 @@ Reference: Software Carpentry and Missing Semester (S3–S4).
 
 **SQL / query / join:** SQL is a language for working with relational databases; a query requests an operation or result; a join combines rows according to a relationship. Joins can duplicate rows when several matches exist.
 
-**API:** An application programming interface: a defined way for software to interact. APIs can be local or network-accessible; an API is not inherently an AI service.
-
 **Client / server:** Roles in an interaction: a client requests something; a server handles requests. One machine or program can participate in both roles.
-
-**Frontend / backend:** The user-facing interface and the supporting data or application logic, often running on a server. The exact boundary depends on the architecture.
 
 **Endpoint / HTTP / status code:** An endpoint is an addressable interface; HTTP is a web communication protocol; a status code reports a category of response. A successful response is not a guarantee that its content answers your question correctly.
 
@@ -147,8 +179,6 @@ Reference: Software Carpentry, Missing Semester, and MDN's JSON reference. Treat
 Reference: Google's ML glossary and prerequisites (S7), Hugging Face (S8), and Microsoft's red-teaming guidance (S9). These entries intentionally avoid a promise that similarity, model confidence, or a passing test establishes truth.
 
 ## Language transfer
-
-**DSL:** Domain-specific language: notation or instructions designed for a narrower problem domain, such as SQL or regular expressions. Rust is not a DSL.
 
 **Static / dynamic typing:** Type checks can happen before execution or during execution, with details varying by language and tools. Python type annotations alone do not enforce runtime types.
 

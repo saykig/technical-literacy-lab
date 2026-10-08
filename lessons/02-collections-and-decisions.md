@@ -1,5 +1,7 @@
 # Lesson 2 — Lists, loops, and decisions
 
+Syllabus Unit 3. Previous: [Lesson 1 — following a program](01-follow-a-program.md).
+
 ## Aim
 
 Read a small decision repeated over several values.
