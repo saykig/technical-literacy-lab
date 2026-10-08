@@ -1,8 +1,4 @@
 # Technical Literacy Lab
-## Start from zero. Build intuition. Take on deeper challenges.
-
-Updated 8 October 2026
-
 Technical Literacy Lab is a beginner-friendly learning plan for anyone who wants to understand computers, learn to read and write code, and gradually tackle more demanding technical problems. No computer science background is assumed. Begin with everyday examples and no-code exercises, then learn Python through small programs you can predict, change, and explain.
 
 ## Why this learning plan exists
