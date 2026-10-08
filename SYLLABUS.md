@@ -2,6 +2,8 @@
 
 ## Aim and boundaries
 
+This learning plan is for anyone starting without a computer science background. It begins with familiar examples and short exercises, then increases the challenge through independent debugging, working with data, reading repositories, evaluating AI behavior, and a small tested capstone. The aim is to understand each action well enough to explain it and eventually choose the next step independently.
+
 The aim is practical technical literacy: read small programs accurately, write short useful scripts, inspect a repository without getting lost, and ask informed questions about AI and software. It is not the ability to understand every unfamiliar codebase without documentation.
 
 The language sequence is **Python first; SQL after basic data handling; Rust reading later; R when your actual research or coursework calls for it**. Learn Markdown and JSON along the way. Shell commands are another small skill, not a prerequisite to months of programming.
@@ -81,13 +83,13 @@ Use one main resource at a time. Futurecoder is the initial practice environment
 
 **Concepts:** working directory, relative path, command, option, repository, commit, diff, branch, clone, fork, pull request, issue.
 
-**Work:** Save and run one `.py` file locally. Learn how to list files and change directory. Inspect this existing private GitHub repository, then learn to keep a local copy and read a diff before recording or uploading a change. Learn what a branch is; practice creating one only when you explicitly request it. First learn the concepts in the browser where possible; terminal Git comes afterward.
+**Work:** Save and run one `.py` file locally. Learn how to list files and change directory. Inspect this public GitHub repository, then learn to keep your own copy and read a diff before recording or uploading a change. Learn what a branch is; practice creating one only when you explicitly request it. First learn the concepts in the browser where possible; terminal Git comes afterward.
 
 **Resource:** Software Carpentry “The Unix Shell” episodes 1–3 and “Version Control with Git” episodes 1–7. MIT Missing Semester's overview and Git lecture are optional reinforcement, not additional compulsory courses.
 
 **Ready to move on:** You know which machine and folder a command affects, can inspect your changes, and can explain clone versus fork. You do not paste commands whose effects you cannot describe.
 
-**Safety:** Keep `.env` files, passwords, API keys, and personal documents out of commits. Do not run downloaded installation scripts blindly.
+**Safety:** Keep `.env` files, passwords, API keys, and sensitive documents out of commits. Do not run downloaded installation scripts blindly.
 
 ## Unit 6 — Small datasets and SQL
 

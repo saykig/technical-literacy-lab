@@ -1,10 +1,12 @@
 # Curriculum review and setup checks
 
-Reviewed 8 October 2026 before creating the private GitHub repository.
+Reviewed 8 October 2026 before the initial GitHub publication.
 
 The separate supplied syllabus matched the ZIP's syllabus. The original plan moves from browser-based Python practice to local files and Git, then datasets/SQL, APIs, repository reading, AI literacy, and later language transfer. That order has been retained. The ZIP included four starter lessons; the later units were a roadmap, not complete lessons.
 
 The main gap was the assumption that the learner already understood computers and tool roles. Unit 0 now supplies a short conceptual introduction, familiar examples, diagrams, comprehension questions, and a no-code worksheet. Detailed systems theory and installations remain deferred. The README, syllabus, glossary, tutor instructions, lesson navigation, and progress record now use the same starting point.
+
+The plan is intended for anyone beginning without a computer science background. The progression does become more demanding: tracing simple code leads to independent debugging, data handling, repository reading, evaluation, and a tested capstone. Units 0–4 have starter lessons; Units 5–12 currently provide a roadmap and external resources. The public repository keeps a blank progress template so each learner can maintain their own record.
 
 The initial import is preserved in Git history. All six supplied Python files are unchanged from that import, including the deliberate debugging bug and the existing reference repair. The learner still makes the exercise edits.
 

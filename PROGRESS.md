@@ -1,4 +1,6 @@
-# Progress record
+# Progress record template
+
+This is a shared starting template for any learner. Keep your completed copy in your own repository copy or in the ignored `local-notes/` folder. The shared template does not record or combine learners' progress.
 
 Prepared: 7 October 2026; foundations added 8 October 2026
 Current unit: 0 — foundations before Python
